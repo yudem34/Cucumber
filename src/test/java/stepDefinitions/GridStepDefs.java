@@ -4,6 +4,7 @@ import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -37,6 +38,14 @@ public class GridStepDefs {
     @Given("user is on the application_url with firefox {string}")
     public void userIsOnTheApplication_urlWithFirefox(String url) throws MalformedURLException {
         driver = new RemoteWebDriver(new URL("http://192.168.102.248:4444"), new FirefoxOptions());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().window().maximize();
+        driver.get(url);
+    }
+
+    @Given("user is on the application_url with Edge {string}")
+    public void userIsOnTheApplication_urlWithEdge(String url) throws MalformedURLException {
+        driver=new RemoteWebDriver(new URL("http://192.168.102.248:4444"),new EdgeOptions());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get(url);

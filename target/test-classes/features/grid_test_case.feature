@@ -12,3 +12,9 @@ Feature: app_title_verification
     Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire"
     Then close the remote driver
 
+  @gridEdge
+  Scenario: TC01_title_on_edge
+    Given user is on the application_url with Edge "https://www.bluerentalcars.com/"
+    Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire"
+    Then close the remote driver
+
