@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="34.27">
+    <testcase classname="US17_US18 Test items(oge) Olustur / Guncelle / Sil Yeni Physicians Olustur / Guncelle / Goruntule ve Sil" name="Admin, doktorlarin bilgilerini gorebilmelidir." time="33.792">
+        <system-out>
+            <![CDATA[Given Admin www.medunna.com adresine gider..................................passed
+Then Giris yap simgesine ve acilan menude Sign-in secenegine tiklar.........passed
+And Admin gecerli bir Username girer........................................passed
+And Admin gecerli bir password girer........................................passed
+And Sign in butonuna tiklar.................................................passed
+And Items&Title menusunden Physician secenegine tiklar......................passed
+And Doktoru goruntule butonuna tiklar.......................................passed
+And Goruntulendigini dogrular...............................................passed
+And Sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
